@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf build && tsc",
     "start": "node ./build",
-    "dev": "tsnd --respawn --transpile-only api"
+    "dev": "tsnd --respawn --transpile-only src"
   },
   "keywords": [],
   "author": "",

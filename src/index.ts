@@ -8,11 +8,11 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 app.post('/', (req, res) => {
-  console.log('POST', req.body)
+  console.log('POST', JSON.stringify(req.body, null, 2))
   res.sendStatus(200)
 })
 app.get('/', (req, res) => {
-  console.log('GET', req.body)
+  console.log('GET', JSON.stringify(req.body, null, 2))
   res.sendStatus(200)
 })
 
